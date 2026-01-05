@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id" class="bg-gray-50">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harga BBM Indonesia</title>
+    
+    <!-- Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        pertamina: '#DA291C', // Pertamina red
+                        shell: '#FBCE07', // Shell yellow
+                        bp: '#009036', // BP green
+                        vivo: '#0055AA', // Vivo Blue (approx)
+                        mobil: '#0C4C9B', // Mobil Blue
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass-card {
+                @apply bg-white bg-opacity-90 backdrop-blur-lg border border-gray-100 shadow-lg rounded-2xl;
+            }
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F3F4F6;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">⛽</span>
+                    <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+                        Harga BBM Indo
+                    </h1>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="/api-docs.html" class="hidden sm:flex text-gray-500 hover:text-blue-600 font-medium text-sm transition-colors mr-2">
+                        API Docs
+                    </a>
+                    <button id="refreshBtn" 
+                    class="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full text-sm font-medium transition-all shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    <span>Update Harga</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-7xl">
+        
+        <!-- Stats Section -->
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 mb-8">
+            <!-- Pertamina -->
+            <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-sm">P</div>
+                <div>
+                    <div class="text-xs text-gray-500">Pertamina</div>
+                    <div class="font-bold text-gray-900" id="pertaminaCount">-</div>
+                </div>
+            </div>
+             <!-- Shell -->
+             <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 font-bold text-sm">S</div>
+                <div>
+                    <div class="text-xs text-gray-500">Shell</div>
+                    <div class="font-bold text-gray-900" id="shellCount">-</div>
+                </div>
+            </div>
+             <!-- BP -->
+             <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-sm">B</div>
+                <div>
+                    <div class="text-xs text-gray-500">BP</div>
+                    <div class="font-bold text-gray-900" id="bpCount">-</div>
+                </div>
+            </div>
+            <!-- Vivo -->
+            <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-sm">V</div>
+                <div>
+                    <div class="text-xs text-gray-500">Vivo</div>
+                    <div class="font-bold text-gray-900" id="vivoCount">-</div>
+                </div>
+            </div>
+            <!-- Mobil -->
+            <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-sm">M</div>
+                <div>
+                    <div class="text-xs text-gray-500">Mobil</div>
+                    <div class="font-bold text-gray-900" id="mobilCount">-</div>
+                </div>
+            </div>
+            <!-- Last Update -->
+            <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 font-bold text-sm">
+                    ⏱
+                </div>
+                <div>
+                    <div class="text-xs text-gray-500">Update</div>
+                    <div class="font-bold text-gray-900 text-xs" id="lastUpdate">-</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+            <h2 class="text-lg font-semibold mb-4 text-gray-800">Filter Pencarian</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="space-y-2">
+                    <label class="text-sm font-medium text-gray-600">Provinsi</label>
+                    <select id="provinceSelect" class="w-full rounded-lg border-gray-200 bg-gray-50 focus:border-blue-500 focus:ring-blue-500 p-2.5 text-sm transition-colors">
+                        <option value="">Semua Provinsi</option>
+                    </select>
+                </div>
+                <!-- Kabupaten disable dulu -->
+                <div class="space-y-2">
+                    <label class="text-sm font-medium text-gray-600">Kabupaten/Kota</label>
+                    <select id="regencySelect" disabled class="w-full rounded-lg border-gray-200 bg-gray-50 focus:border-blue-500 focus:ring-blue-500 p-2.5 text-sm transition-colors opacity-60">
+                        <option value="">Pilih Provinsi Dahulu</option>
+                    </select>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-medium text-gray-600">Provider BBM</label>
+                    <select id="providerSelect" class="w-full rounded-lg border-gray-200 bg-gray-50 focus:border-blue-500 focus:ring-blue-500 p-2.5 text-sm transition-colors">
+                        <option value="">Semua Provider</option>
+                        <option value="pertamina">Pertamina</option>
+                        <option value="shell">Shell</option>
+                        <option value="bp">BP - British Petroleum</option>
+                        <option value="vivo">Vivo - Revvo</option>
+                        <option value="mobil">Mobil Indostation</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: Chart Section -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8">
+             <div class="flex justify-between items-center mb-6">
+                <h2 class="text-lg font-semibold text-gray-800">Grafik Perbandingan Harga</h2>
+                <div class="text-sm text-gray-500 bg-gray-50 px-3 py-1 rounded-lg border border-gray-200" id="chartRegionLabel">
+                    Semua Wilayah (Rata-rata)
+                </div>
+            </div>
+            <div class="relative h-72 w-full">
+                <canvas id="priceChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Data Content -->
+        <div id="contentLoading" class="hidden flex-col items-center justify-center py-20">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+            <p class="mt-4 text-gray-500 font-medium">Sedang memuat data harga terbaru...</p>
+        </div>
+
+        <div id="errorMessage" class="hidden bg-red-50 border border-red-200 text-red-700 px-6 py-4 rounded-xl mb-8 flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span id="errorText">Terjadi kesalahan saat memuat data.</span>
+        </div>
+
+        <div id="noDataResult" class="hidden flex-col items-center justify-center py-20 text-center">
+            <div class="bg-gray-100 p-4 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900">Tidak ada data ditemukan</h3>
+            <p class="text-gray-500 max-w-md mx-auto mt-1">Coba ubah filter pencarian Anda atau refresh halaman untuk mendapatkan data terbaru.</p>
+        </div>
+
+        <!-- Price Cards Grid -->
+        <div id="priceGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cards injected via JS -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8 mt-auto">
+        <div class="container mx-auto px-4 max-w-7xl text-center">
+            <p class="text-gray-500 text-sm">© 2026 Harga BBM Indonesia. Data scraped/estimated from official sources.</p>
+            <div class="mt-2 flex justify-center gap-4 text-sm text-blue-600">
+                <a href="/api/prices" target="_blank" class="hover:underline">API Access</a>
+                <span>•</span>
+                <a href="https://emsifa.github.io/api-wilayah-indonesia/" target="_blank" class="hover:underline">Wilayah Data</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
