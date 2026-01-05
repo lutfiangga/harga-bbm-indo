@@ -39,24 +39,6 @@ Anda dapat menggunakan data JSON statis yang kami generate setiap hari:
 - **Hosting:** GitHub Pages (Static).
 - **CI/CD:** GitHub Actions.
 
-## 📦 Cara Jalanin Lokal
-
-1. Clone repo
-   ```bash
-   git clone https://github.com/lutfiangga/harga-bbm-indo.git
-   ```
-2. Install
-   ```bash
-   npm install
-   ```
-3. Generate Data
-   ```bash
-   node generate_data.js
-   ```
-4. Jalanin Preview
-   ```bash
-   node index.js
-   ```
-   Buka `http://localhost:3000`
+---
 
 License: MIT
