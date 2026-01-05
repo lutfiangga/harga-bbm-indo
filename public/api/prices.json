@@ -1,49 +1,20 @@
 {
   "success": true,
   "data": {
-    "lastUpdated": "2026-01-05T10:34:57.077Z",
+    "lastUpdated": "2026-01-05T10:40:36.785Z",
     "providers": {
       "pertamina": [
         {
           "provider": "pertamina",
-          "province": "Free Trade Zone (FTZ) Batam",
+          "province": "Aceh",
           "products": {
-            "Pertalite": 12750,
-            "Pertamax Green": 11850,
-            "Pertamax Turbo": 11750,
-            "Pertamina Dex": 10000,
-            "Dexlite": 12900,
-            "Solar": 12800
-          },
-          "provinceInfo": {
-            "id": null,
-            "name": "Free Trade Zone (FTZ) Batam"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Free Trade Zone (FTZ) Sabang",
-          "products": {
-            "Pertamax Green": 11500,
-            "Pertamax Turbo": 11400,
-            "Pertamina Dex": 10000,
-            "Solar": 12600
-          },
-          "provinceInfo": {
-            "id": null,
-            "name": "Free Trade Zone (FTZ) Sabang"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Aceh",
-          "products": {
-            "Pertalite": 13400,
-            "Pertamax Green": 12500,
-            "Pertamax Turbo": 12400,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
+            "Pertalite": 10000,
+            "Pertamax": 12100,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13450,
+            "Pertamina Dex": 13700,
+            "Biosolar": 6800
           },
           "provinceInfo": {
             "id": "11",
@@ -52,551 +23,32 @@
         },
         {
           "provider": "pertamina",
-          "province": "Prov. Bali",
+          "province": "Sumatera Utara",
           "products": {
-            "Pertalite": 13400,
-            "Pertamax Green": 12350,
-            "Pertamax Turbo": 12250,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13500
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
           },
           "provinceInfo": {
-            "id": "51",
-            "name": "BALI"
+            "id": "12",
+            "name": "SUMATERA UTARA"
           }
         },
         {
           "provider": "pertamina",
-          "province": "Prov. Bangka-Belitung",
+          "province": "Sumatera Barat",
           "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "19",
-            "name": "KEPULAUAN BANGKA BELITUNG"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Banten",
-          "products": {
-            "Pertalite": 13400,
-            "Pertamax": 13150,
-            "Pertamax Green": 12350,
-            "Pertamax Turbo": 12250,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13500
-          },
-          "provinceInfo": {
-            "id": "36",
-            "name": "BANTEN"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Bengkulu",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "17",
-            "name": "BENGKULU"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. DI Yogyakarta",
-          "products": {
-            "Pertalite": 13400,
-            "Pertamax": 13150,
-            "Pertamax Green": 12350,
-            "Pertamax Turbo": 12250,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13500
-          },
-          "provinceInfo": {
-            "id": "34",
-            "name": "DI YOGYAKARTA"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. DKI Jakarta",
-          "products": {
-            "Pertalite": 13400,
-            "Pertamax": 13150,
-            "Pertamax Green": 12350,
-            "Pertamax Turbo": 12250,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13500
-          },
-          "provinceInfo": {
-            "id": "31",
-            "name": "DKI JAKARTA"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Gorontalo",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "75",
-            "name": "GORONTALO"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Jambi",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "15",
-            "name": "JAMBI"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Jawa Barat",
-          "products": {
-            "Pertalite": 13400,
-            "Pertamax": 13150,
-            "Pertamax Green": 12350,
-            "Pertamax Turbo": 12250,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13500
-          },
-          "provinceInfo": {
-            "id": "32",
-            "name": "JAWA BARAT"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Jawa Tengah",
-          "products": {
-            "Pertalite": 13400,
-            "Pertamax": 13150,
-            "Pertamax Green": 12350,
-            "Pertamax Turbo": 12250,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13500
-          },
-          "provinceInfo": {
-            "id": "33",
-            "name": "JAWA TENGAH"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Jawa Timur",
-          "products": {
-            "Pertalite": 13400,
-            "Pertamax": 13150,
-            "Pertamax Green": 12350,
-            "Pertamax Turbo": 12250,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13500
-          },
-          "provinceInfo": {
-            "id": "35",
-            "name": "JAWA TIMUR"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Kalimantan Barat",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "61",
-            "name": "KALIMANTAN BARAT"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Kalimantan Selatan",
-          "products": {
-            "Pertalite": 14000,
-            "Pertamax Green": 12950,
-            "Pertamax Turbo": 12850,
-            "Pertamina Dex": 10000,
-            "Dexlite": 14200,
-            "Solar": 14100
-          },
-          "provinceInfo": {
-            "id": "63",
-            "name": "KALIMANTAN SELATAN"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Kalimantan Tengah",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "62",
-            "name": "KALIMANTAN TENGAH"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Kalimantan Timur",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "64",
-            "name": "KALIMANTAN TIMUR"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Kalimantan Utara",
-          "products": {
-            "Pertalite": 14000,
-            "Pertamax Green": 12950,
-            "Pertamax Turbo": 12850,
-            "Pertamina Dex": 10000,
-            "Dexlite": 14200,
-            "Solar": 14100
-          },
-          "provinceInfo": {
-            "id": "65",
-            "name": "KALIMANTAN UTARA"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Kepulauan Riau",
-          "products": {
-            "Pertalite": 14000,
-            "Pertamax Green": 12950,
-            "Pertamax Turbo": 12850,
-            "Pertamina Dex": 10000,
-            "Dexlite": 14200,
-            "Solar": 14100
-          },
-          "provinceInfo": {
-            "id": "14",
-            "name": "RIAU"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Lampung",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "18",
-            "name": "LAMPUNG"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Maluku",
-          "products": {
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "81",
-            "name": "MALUKU"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Maluku Utara",
-          "products": {
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "81",
-            "name": "MALUKU"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Nusa Tenggara Barat",
-          "products": {
-            "Pertalite": 13400,
-            "Pertamax Green": 12350,
-            "Pertamax Turbo": 12250,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13600,
-            "Solar": 13500
-          },
-          "provinceInfo": {
-            "id": "52",
-            "name": "NUSA TENGGARA BARAT"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Nusa Tenggara Timur",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "53",
-            "name": "NUSA TENGGARA TIMUR"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Papua",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "91",
-            "name": "PAPUA BARAT"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Papua Barat",
-          "products": {
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "91",
-            "name": "PAPUA BARAT"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Papua Barat Daya",
-          "products": {
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "91",
-            "name": "PAPUA BARAT"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Papua Pegunungan",
-          "products": {
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "94",
-            "name": "PAPUA"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Papua Selatan",
-          "products": {
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "94",
-            "name": "PAPUA"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Papua Tengah",
-          "products": {
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "94",
-            "name": "PAPUA"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Riau",
-          "products": {
-            "Pertalite": 14000,
-            "Pertamax Green": 12950,
-            "Pertamax Turbo": 12850,
-            "Pertamina Dex": 10000,
-            "Dexlite": 14200,
-            "Solar": 14100
-          },
-          "provinceInfo": {
-            "id": "14",
-            "name": "RIAU"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Sulawesi Barat",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "76",
-            "name": "SULAWESI BARAT"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Sulawesi Selatan",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "73",
-            "name": "SULAWESI SELATAN"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Sulawesi Tengah",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "72",
-            "name": "SULAWESI TENGAH"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Sulawesi Tenggara",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "74",
-            "name": "SULAWESI TENGGARA"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Sulawesi Utara",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
-          },
-          "provinceInfo": {
-            "id": "71",
-            "name": "SULAWESI UTARA"
-          }
-        },
-        {
-          "provider": "pertamina",
-          "province": "Prov. Sumatera Barat",
-          "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12800,
-            "Pertamax Turbo": 12700,
-            "Pertamina Dex": 10000,
-            "Dexlite": 14200,
-            "Solar": 14100
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
           },
           "provinceInfo": {
             "id": "13",
@@ -605,14 +57,83 @@
         },
         {
           "provider": "pertamina",
-          "province": "Prov. Sumatera Selatan",
+          "province": "Riau",
           "products": {
-            "Pertalite": 13700,
-            "Pertamax Green": 12650,
-            "Pertamax Turbo": 12550,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
+            "Pertalite": 10000,
+            "Pertamax": 12600,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13800,
+            "Dexlite": 14000,
+            "Pertamina Dex": 14300,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "14",
+            "name": "RIAU"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Kepulauan Riau",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12600,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13800,
+            "Dexlite": 14000,
+            "Pertamina Dex": 14300,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "14",
+            "name": "RIAU"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Jambi",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "15",
+            "name": "JAMBI"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Bengkulu",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12600,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13800,
+            "Dexlite": 14000,
+            "Pertamina Dex": 14300,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "17",
+            "name": "BENGKULU"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Sumatera Selatan",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
           },
           "provinceInfo": {
             "id": "16",
@@ -621,18 +142,512 @@
         },
         {
           "provider": "pertamina",
-          "province": "Prov. Sumatera Utara",
+          "province": "Bangka Belitung",
           "products": {
-            "Pertalite": 13400,
-            "Pertamax Green": 12500,
-            "Pertamax Turbo": 12400,
-            "Pertamina Dex": 10000,
-            "Dexlite": 13900,
-            "Solar": 13800
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
           },
           "provinceInfo": {
-            "id": "12",
-            "name": "SUMATERA UTARA"
+            "id": "19",
+            "name": "KEPULAUAN BANGKA BELITUNG"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Lampung",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "18",
+            "name": "LAMPUNG"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "DKI Jakarta",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12100,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13450,
+            "Pertamina Dex": 13700,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "31",
+            "name": "DKI JAKARTA"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Banten",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12100,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13450,
+            "Pertamina Dex": 13700,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "36",
+            "name": "BANTEN"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Jawa Barat",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12100,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13450,
+            "Pertamina Dex": 13700,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "32",
+            "name": "JAWA BARAT"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Jawa Tengah",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12100,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13450,
+            "Pertamina Dex": 13700,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "33",
+            "name": "JAWA TENGAH"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "DI Yogyakarta",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12100,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13450,
+            "Pertamina Dex": 13700,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "34",
+            "name": "DI YOGYAKARTA"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Jawa Timur",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12100,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13450,
+            "Pertamina Dex": 13700,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "35",
+            "name": "JAWA TIMUR"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Bali",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12100,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13450,
+            "Pertamina Dex": 13700,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "51",
+            "name": "BALI"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Nusa Tenggara Barat",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "52",
+            "name": "NUSA TENGGARA BARAT"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Nusa Tenggara Timur",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "53",
+            "name": "NUSA TENGGARA TIMUR"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Kalimantan Barat",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "61",
+            "name": "KALIMANTAN BARAT"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Kalimantan Tengah",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "62",
+            "name": "KALIMANTAN TENGAH"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Kalimantan Selatan",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "63",
+            "name": "KALIMANTAN SELATAN"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Kalimantan Timur",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "64",
+            "name": "KALIMANTAN TIMUR"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Kalimantan Utara",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "65",
+            "name": "KALIMANTAN UTARA"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Sulawesi Utara",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "71",
+            "name": "SULAWESI UTARA"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Gorontalo",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "75",
+            "name": "GORONTALO"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Sulawesi Tengah",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "72",
+            "name": "SULAWESI TENGAH"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Sulawesi Tenggara",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "74",
+            "name": "SULAWESI TENGGARA"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Sulawesi Selatan",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "73",
+            "name": "SULAWESI SELATAN"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Sulawesi Barat",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13500,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "76",
+            "name": "SULAWESI BARAT"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Maluku",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "81",
+            "name": "MALUKU"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Maluku Utara",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "81",
+            "name": "MALUKU"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Papua",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "91",
+            "name": "PAPUA BARAT"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Papua Barat",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "91",
+            "name": "PAPUA BARAT"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Papua Selatan",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "94",
+            "name": "PAPUA"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Papua Pegunungan",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "94",
+            "name": "PAPUA"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Papua Tengah",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "94",
+            "name": "PAPUA"
+          }
+        },
+        {
+          "provider": "pertamina",
+          "province": "Papua Barat Daya",
+          "products": {
+            "Pertalite": 10000,
+            "Pertamax": 12400,
+            "Pertamax Green 95": 12700,
+            "Pertamax Turbo": 13250,
+            "Dexlite": 13700,
+            "Pertamina Dex": 14000,
+            "Biosolar": 6800
+          },
+          "provinceInfo": {
+            "id": "91",
+            "name": "PAPUA BARAT"
           }
         }
       ],
