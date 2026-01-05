@@ -249,23 +249,25 @@ const fetchRegencies = async (provId) => {
 const fetchPrices = async () => {
     setLoading(true);
     try {
-        const params = new URLSearchParams();
-        if (state.filters.provinceId) params.append('provinceId', state.filters.provinceId);
-        if (state.filters.provider) params.append('provider', state.filters.provider);
+        // Fetch static json from api/prices.json
+        // Cache bust with timestamp
+        const res = await fetch(`api/prices.json?t=${new Date().getTime()}`);
 
-        const res = await fetch(`/api/prices?${params.toString()}`);
+        if (!res.ok) throw new Error("Gagal memuat data harga.");
+
         const data = await res.json();
 
         if (data.success) {
             state.prices = data.data;
             renderPrices();
             updateStats();
-            updateChart(); // Update chart with new data/filters
+            updateChart();
         } else {
-            throw new Error(data.error);
+            throw new Error(data.error || "Data tidak valid");
         }
     } catch (e) {
-        showError(e.message || "Gagal mengambil data harga BBM terbaru.");
+        showError("Gagal mengambil data harga terbaru.");
+        console.error(e);
     } finally {
         setLoading(false);
     }
